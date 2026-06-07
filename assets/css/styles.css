@@ -1,0 +1,31 @@
+.main {
+    background-color: hsl(220, 16%, 96%);
+}
+
+.nav-item {
+    font-weight: 600;
+}
+
+.payment {
+    font-size: 15px;
+}
+
+.bi-arrow-right-circle {
+    font-size: small;
+}
+
+.inputError {
+    font-size: 12px;
+    color: red;
+    padding-left: 7px;
+    padding-top: 5px;
+    display: none;
+}
+
+#onlinePaymentSection {
+    display: none;
+}
+.cancel-button {
+    color: #1F2937 !important; /* Dodger blue */
+    /* font-size: 16px; */
+  }

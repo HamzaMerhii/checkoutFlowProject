@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPAY - CHECKOUT</title>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/plugins/sweet_alert/sweet_alert.css">
+    <script src="assets/plugins/sweet_alert/sweet_alert.js"></script>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <section class="navbarSection">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid-sm container-lg">
+                    <a class="navbar-brand" href="/">
+                        <img src="assets/images/epay.webp" height="50" loading="lazy" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="navbar-toggler-icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-3 mb-lg-0 mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Brands</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <i class="bi bi-cart2" style="font-size: 24px;"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="checkoutSection row main">
+            <section class="personalInformationSection col-lg-8 col-12 my-3 order-lg-1 order-2">
+                <h5 class="px-lg-4 p-2">Personal Information</h5>
+                <div class="row bg-white personalInformationDetails mx-lg-3 rounded-4 p-3 mx-1">
+                    <div class="mb-3 col-lg-6 col-md-12">
+                        <label for="name" class="form-label fs-6">Name</label>
+                        <input type="text" class="form-control fs-6 py-2" id="name" placeholder="First & Last Name">
+                        <span class="inputError" id="nameErrorMsg">Enter Your Name</span>
+                    </div>
+                    <div class="mb-3 col-lg-6 col-md-12">
+                        <label for="number" class="form-label fs-6">Mobile Number</label>
+                        <input type="number" class="form-control fs-6 py-2" id="mobileNumber" placeholder="00000000">
+                        <span class="inputError" id="mobileErrorMsg">Enter Your Mobile Number</span>
+                        <span class="inputError" id="mobileInvalidMsg">Enter A Valid Mobile Number</span>
+
+                    </div>
+                    <div class="mb-3 col-lg-6 col-md-12">
+                        <label for="email" class="form-label fs-6">Email</label>
+                        <input type="email" class="form-control fs-6 py-2" id="email" placeholder="name@example.com">
+                        <span class="inputError" id="emailErrorMsg">Enter Your Email</span>
+
+                    </div>
+                    <div class="mb-3 col-lg-6 col-md-12">
+                        <label for="number" class="form-label fs-6">City</label>
+                        <input type="text" class="form-control fs-6 py-2" id="city" placeholder="Beirut">
+                        <span class="inputError" id="cityErrorMsg">Enter Your City</span>
+
+                    </div>
+                    <div class="mb-3 col-sm-12">
+                        <label for="address" class="form-label fs-6">Address</label>
+                        <textarea class="form-control" id="address" rows="5"></textarea>
+                        <span class="inputError" id="addressErrorMsg">Enter Your Address</span>
+                    </div>
+                </div>
+            </section>
+            <section class="personalInformationSection col-lg-4 col-12 my-3 order-lg-2 order-1">
+                <h5 class="py-2">Order Summary</h5>
+                <div class="row bg-white personalInformationDetails rounded-4 p-3 mx-1">
+                    <div class="mb-3 d-flex">
+                        <img src="assets/images/shoes.webp" width="60px" height="60px" class="rounded-3">
+                        <div class="px-2">
+                            <p class="fs-6">Name: Shoes</p>
+                            <p class="fs-6">Color: White</p>
+                        </div>
+                        <div class="px-2">
+                            <p class="fs-6">Price: $150.00</p>
+                            <p class="fs-6">Qty: 2 pcs</p>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex">
+                        <img src="assets/images/t-shirt.webp" width="60px" height="60px" class="rounded-3">
+                        <div class="px-2">
+                            <p class="fs-6">Name: T-Shirt</p>
+                            <p class="fs-6">Color: Blue</p>
+                        </div>
+                        <div class="px-2">
+                            <p class="fs-6">Price: $50.00</p>
+                            <p class="fs-6">Qty: 1 pcs</p>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex">
+                        <img src="assets/images/cap.webp" width="60px" height="60px" class="rounded-3">
+                        <div class="px-2">
+                            <p class="fs-6">Name: Cap</p>
+                            <p class="fs-6">Color: Black</p>
+                        </div>
+                        <div class="px-2">
+                            <p class="fs-6">Price: $30.00</p>
+                            <p class="fs-6">Qty: 1 pcs</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <p>SubTotal</p>
+                            <p>$380</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="paymentMethodSection col-lg-8 col-12 order-lg-3 order-3">
+                <h5 class="px-lg-4 p-3">Payment Method</h5>
+                <div class="row bg-white personalInformationDetails mx-lg-3 rounded-4 p-3 mx-1">
+                    <div class="my-2 col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="cashOnDeliverypayment"
+                                checked onclick="updatePaymantSection(0)">
+                            <label class="form-check-label payment" style="font-size:15px;" for="cashOnDeliverypayment">
+                                Cash On Delivery
+                            </label>
+                        </div>
+                    </div>
+                    <div class="my-2 col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="onlinepayment"
+                                onclick="updatePaymantSection(1)">
+                            <label class="form-check-label payment" for="onlinepayment">
+                                Visa Online Payment
+                            </label>
+                        </div>
+                    </div>
+                    <section class="row mt-3" id="onlinePaymentSection">
+                        <hr>
+                        <div class="mb-3 col-lg-6 col-md-12">
+                            <label for="name" class="form-label fs-6">Card Holder Name</label>
+                            <input type="text" class="form-control fs-6 py-2" id="cardName" placeholder="Hamza Merhi">
+                            <span class="inputError" id="cardNameErrorMsg">Enter Card Holder Name</span>
+                        </div>
+                        <div class="mb-3 col-lg-6 col-md-12">
+                            <label for="name" class="form-label fs-6">Card Number</label>
+                            <input type="text" class="form-control fs-6 py-2" id="cardNumber"
+                                placeholder="4242 4242 4242 4242">
+                            <span class="inputError" id="cardNumberErrorMsg">Enter Card Number</span>
+                        </div>
+                        <div class="mb-3 col-lg-6 col-md-12">
+                            <label for="name" class="form-label fs-6">Expiry Date</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="number" class="form-control fs-6 py-2" id="cardMonth" placeholder="MM">
+                                    <span class="inputError" id="cardMonthErrorMsg">Enter The Month</span>
+                                    <span class="inputError" id="cardMonthInvalidMsg">Enter a valid Month</span>
+                                </div>
+                                <div class="col-6">
+                                    <input type="number" class="form-control fs-6 py-2" id="cardYear"
+                                        placeholder="YYYY">
+                                    <span class="inputError" id="cardYearErrorMsg">Enter The Year</span>
+                                    <span class="inputError" id="cardYearInvalidMsg">Enter a valid Year</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-lg-6 col-md-12">
+                            <label for="name" class="form-label fs-6">CVV</label>
+                            <input type="text" class="form-control fs-6 py-2" id="cvv" placeholder="123">
+                            <span class="inputError" id="cvvErrorMsg">Enter The Card CVV</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="personalInformationSection col-lg-4 col-12 my-3 order-lg-4 order-4">
+                <h5 class="py-2">Order CheckOut</h5>
+                <div class="row bg-white personalInformationDetails rounded-4 p-3 mx-1">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <p>SubTotal</p>
+                            <p>$380</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Delivery Fees</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Total Order</p>
+                            <p>$385</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between row">
+                            <button class="btn btn-primary col-12" type="submit" id="checkout">Confirm Order <i
+                                    class="bi bi-arrow-right-circle text-white px-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>
