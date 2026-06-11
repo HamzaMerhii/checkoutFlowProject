@@ -199,6 +199,7 @@ cardNumber.addEventListener("keyup", function (event) {
   if (event.key !== "Backspace") {
     if (cardNumberValue.length === 16) {
       cardNumberValidation(true);
+      cardNumber.value.slice(0, 20);
     }
     if (cardNumber.value.charAt(cardNumber.value.length - 1) !== " ") {
       cardNumberValue.push(cardNumber.value[cardNumber.value.length - 1]);
@@ -207,6 +208,7 @@ cardNumber.addEventListener("keyup", function (event) {
       }
       if (cardNumberValue.length === 16) {
         cardNumberValidation(true);
+        cardNumber.value.slice(0, 20);
       }
     }
   }
